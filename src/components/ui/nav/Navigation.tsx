@@ -14,16 +14,16 @@ export const Navigation = () => {
             className="cursor-pointer"
           />
         </li>
-        <li>
+        <li className="hidden md:block">
           <a href="#">Why us</a>
         </li>
-        <li>
+        <li className="hidden md:block">
           <a href="#">Our Process</a>
         </li>
-        <li>
+        <li className="hidden md:block">
           <a href="#">Testimonials</a>
         </li>
-        <li>
+        <li className="hidden md:block">
           <a href="#">FAQ</a>
         </li>
       </ul>

@@ -5,7 +5,7 @@ import { H1 } from "../../../ui/typography/H1";
 export const Hero = () => {
   return (
     <div
-      className=" bg-center bg-cover pl-8 pb-16 pt-64 rounded-lg relative"
+      className=" bg-center bg-cover px-8 md:pb-16 pt-64 rounded-lg relative"
       style={{ backgroundImage: "url(/images/hero-bg.png)" }}
     >
       <H1 className="text-white">
@@ -34,7 +34,7 @@ export const Hero = () => {
         Get An Estimate
       </Button>
 
-      <div className="bg-white px-8 py-12 rounded-tl-xl flex gap-4 md:gap-8 items-center justify-center max-w-[450px] absolute right-0 bottom-0">
+      <div className="bg-white px-8 py-12 rounded-tl-xl rounded-tr-xl md:rounded-tr-none flex gap-4 md:gap-8 items-center justify-center max-w-[450px] md:absolute mt-8 md:mt-0 right-0 bottom-0">
         <div>
           <Image src={"/vectors/GAF.svg"} width={130} height={45} alt="GAF" />
         </div>

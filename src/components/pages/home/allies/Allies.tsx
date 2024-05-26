@@ -24,7 +24,7 @@ export const Allies = () => {
   ];
   return (
     <div className="mb-12 mt-16">
-      <div className="md:grid gap-4 grid-cols-2 items-center">
+      <div className="grid gap-4 grid-cols-1 md:grid-cols-2 items-center">
         <H2 className="max-w-xl">
           We&apos;re Your Renovation Allies, Not Salespeople
         </H2>
@@ -34,7 +34,7 @@ export const Allies = () => {
           ensure every installation meets the highest standards. 
         </p>
       </div>
-      <div className="md:grid gap-4 grid-cols-2 items-center mt-16">
+      <div className="grid gap-4 grid-cols-1 md:grid-cols-2 items-center mt-16">
         <Image src={"/images/img1.png"} width={572} height={572} alt="img" />
 
         <div className="flex flex-col gap-8 md:gap-16">

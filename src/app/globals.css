@@ -1,2 +1,7 @@
 @import "./base.css";
 @import "./font.css";
+
+.nav-point:last-child {
+  z-index: 20;
+  background-color: #f4f3f1;
+}

@@ -3,6 +3,7 @@ import "./globals.css";
 import { Banner } from "@/components/ui/banner/banner";
 import { Navigation } from "@/components/ui/nav/Navigation";
 import { Container } from "@/components/ui/container/Container";
+import { Footer } from "@/components/pages/home/footer/Footer";
 
 export const metadata: Metadata = {
   title: "EffortlessRenovation",
@@ -29,6 +30,7 @@ export default function RootLayout({
           <Navigation />
         </Container>
         {children}
+        <Footer />
       </body>
     </html>
   );

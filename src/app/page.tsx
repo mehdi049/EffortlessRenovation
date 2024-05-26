@@ -1,10 +1,8 @@
 import { Allies } from "@/components/pages/home/allies/Allies";
+import { HassleFree } from "@/components/pages/home/hassleFree/HassleFree";
 import { Hero } from "@/components/pages/home/hero/Hero";
 import { Protections } from "@/components/pages/home/protections/Protections";
-import { Banner } from "@/components/ui/banner/banner";
 import { Container } from "@/components/ui/container/Container";
-import { Navigation } from "@/components/ui/nav/Navigation";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -14,6 +12,7 @@ export default function Home() {
         <Container>
           <Allies />
           <Protections />
+          <HassleFree />
         </Container>
       </Container>
     </main>
