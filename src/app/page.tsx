@@ -3,6 +3,7 @@ import { Allies } from "@/components/pages/home/allies/Allies";
 import { Feedback } from "@/components/pages/home/feedback/Feedback";
 import { HassleFree } from "@/components/pages/home/hassleFree/HassleFree";
 import { Hero } from "@/components/pages/home/hero/Hero";
+import { OurService } from "@/components/pages/home/ourService/OurService";
 import { Protections } from "@/components/pages/home/protections/Protections";
 import { Testimonials } from "@/components/pages/home/testimonials/Testimonials";
 import { WhyUs } from "@/components/pages/home/whyUs/WhyUs";
@@ -24,6 +25,7 @@ export default function Home() {
       <Testimonials />
       <Container>
         <FAQ />
+        <OurService />
       </Container>
     </main>
   );
