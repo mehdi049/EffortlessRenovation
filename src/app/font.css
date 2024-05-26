@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "inter";
+  font-style: normal;
+  src: url("/fonts/inter/Inter-Regular.otf");
+  src: url("/fonts/inter/Inter-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "inter-semibold";
+  font-style: normal;
+  src: url("/fonts/inter/Inter-SemiBold.otf");
+  src: url("/fonts/inter/Inter-SemiBold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "happy-time";
+  font-style: normal;
+  src: url("/fonts/happyTime/HappyTime.otf");
+  src: url("/fonts/happyTime/HappyTime.ttf") format("truetype");
+  font-display: swap;
+}
+
+.font-inter {
+  font-family: "circular-medium", sans-serif;
+}
+
+.font-semibold {
+  font-family: "inter-semibold", sans-serif;
+  font-weight: normal;
+}
+
+.font-ht {
+  font-family: "happy-time", sans-serif;
+  font-weight: normal;
+}
