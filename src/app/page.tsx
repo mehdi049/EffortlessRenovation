@@ -1,3 +1,4 @@
+import { FAQ } from "@/components/pages/home/FAQ/FAQ";
 import { Allies } from "@/components/pages/home/allies/Allies";
 import { Feedback } from "@/components/pages/home/feedback/Feedback";
 import { HassleFree } from "@/components/pages/home/hassleFree/HassleFree";
@@ -21,6 +22,9 @@ export default function Home() {
         </Container>
       </Container>
       <Testimonials />
+      <Container>
+        <FAQ />
+      </Container>
     </main>
   );
 }

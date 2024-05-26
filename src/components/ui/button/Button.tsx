@@ -22,12 +22,13 @@ export const Button = ({
   }`;
   switch (variant) {
     case "primary":
-      className += " bg-black text-white";
+      className += " bg-black hover:bg-gray-800 duration-200 text-white";
 
       break;
 
     default:
-      className += " bg-white text-black border border-gray-100";
+      className +=
+        " bg-white hover:bg-gray-100 duration-200 text-black border border-gray-100";
       break;
   }
 
