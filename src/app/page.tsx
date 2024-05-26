@@ -1,5 +1,6 @@
 import { FAQ } from "@/components/pages/home/FAQ/FAQ";
 import { Allies } from "@/components/pages/home/allies/Allies";
+import { BeforeAfter } from "@/components/pages/home/beforeAfter/BeforeAfter";
 import { Feedback } from "@/components/pages/home/feedback/Feedback";
 import { HassleFree } from "@/components/pages/home/hassleFree/HassleFree";
 import { Hero } from "@/components/pages/home/hero/Hero";
@@ -26,6 +27,7 @@ export default function Home() {
       <Container>
         <FAQ />
         <OurService />
+        <BeforeAfter />
       </Container>
     </main>
   );

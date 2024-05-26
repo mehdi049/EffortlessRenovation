@@ -22,16 +22,16 @@ export const Testimonials = () => {
 
         <div className="flex gap-4 items-center mt-16">
           <Image
-            src={"/vectors/arrow-previous.svg"}
-            height={48}
-            width={48}
-            alt="previous"
-          />
-          <Image
-            src={"/vectors/arrow-next.svg"}
+            src={"/vectors/arrow-next-white.svg"}
             height={48}
             width={48}
             alt="next"
+          />
+          <Image
+            src={"/vectors/arrow-previous-white.svg"}
+            height={48}
+            width={48}
+            alt="previous"
           />
         </div>
       </div>
