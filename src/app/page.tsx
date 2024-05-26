@@ -1,4 +1,5 @@
 import { Allies } from "@/components/pages/home/allies/Allies";
+import { Feedback } from "@/components/pages/home/feedback/Feedback";
 import { HassleFree } from "@/components/pages/home/hassleFree/HassleFree";
 import { Hero } from "@/components/pages/home/hero/Hero";
 import { Protections } from "@/components/pages/home/protections/Protections";
@@ -13,6 +14,7 @@ export default function Home() {
           <Allies />
           <Protections />
           <HassleFree />
+          <Feedback />
         </Container>
       </Container>
     </main>

@@ -17,6 +17,15 @@ const config: Config = {
         "6xl": ["56px", "65px"],
         "8xl": ["81px", "85px"],
       },
+      animation: {
+        "infinite-scroll": "infinite-scroll 25s linear infinite",
+      },
+      keyframes: {
+        "infinite-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
+      },
     },
   },
   plugins: [],
