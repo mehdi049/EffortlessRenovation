@@ -17,7 +17,7 @@ export const Button = ({
   size = "lg",
   onClick,
 }: ButtonProps) => {
-  className += ` px-5 rounded-lg font-semibold ${
+  className += ` px-5 rounded-lg text-sm lg:font-semibold ${
     size == "sm" ? "py-2" : "py-3"
   }`;
   switch (variant) {

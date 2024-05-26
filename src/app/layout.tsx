@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Banner } from "@/components/ui/banner/banner";
-import { Navigation } from "@/components/ui/nav/Navigation";
 import { Container } from "@/components/ui/container/Container";
 import { Footer } from "@/components/pages/home/footer/Footer";
+import { Navigation } from "@/components/pages/nav/Navigation";
 
 export const metadata: Metadata = {
   title: "EffortlessRenovation",
