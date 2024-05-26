@@ -3,6 +3,7 @@ import { Feedback } from "@/components/pages/home/feedback/Feedback";
 import { HassleFree } from "@/components/pages/home/hassleFree/HassleFree";
 import { Hero } from "@/components/pages/home/hero/Hero";
 import { Protections } from "@/components/pages/home/protections/Protections";
+import { Testimonials } from "@/components/pages/home/testimonials/Testimonials";
 import { WhyUs } from "@/components/pages/home/whyUs/WhyUs";
 import { Container } from "@/components/ui/container/Container";
 
@@ -19,6 +20,7 @@ export default function Home() {
           <WhyUs />
         </Container>
       </Container>
+      <Testimonials />
     </main>
   );
 }

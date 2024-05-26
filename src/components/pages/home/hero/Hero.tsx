@@ -5,7 +5,7 @@ import { H1 } from "../../../ui/typography/H1";
 export const Hero = () => {
   return (
     <div
-      className=" bg-center bg-cover px-8 md:pb-16 pt-64 rounded-lg relative"
+      className="bg-center bg-cover px-8 md:pb-16 pt-64 rounded-lg relative"
       style={{ backgroundImage: "url(/images/hero-bg.png)" }}
     >
       <H1 className="text-white">

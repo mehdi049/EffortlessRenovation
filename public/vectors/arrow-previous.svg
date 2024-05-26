@@ -1,8 +1,8 @@
 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="48" height="48" rx="24" fill="#222222" fill-opacity="0.07"/>
+<rect width="48" height="48" rx="24" fill="#ffff" fill-opacity="0.07"/>
 <g clip-path="url(#clip0_0_200)">
 <g clip-path="url(#clip1_0_200)">
-<path d="M31 23.998H18M24 30.998L17 23.998L24 16.998" stroke="#222222" stroke-width="1.5" stroke-linecap="square"/>
+<path d="M31 23.998H18M24 30.998L17 23.998L24 16.998" stroke="#ffff" stroke-width="1.5" stroke-linecap="square"/>
 </g>
 </g>
 <defs>
