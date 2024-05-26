@@ -10,25 +10,30 @@ import { Protections } from "@/components/pages/home/protections/Protections";
 import { Testimonials } from "@/components/pages/home/testimonials/Testimonials";
 import { WhyUs } from "@/components/pages/home/whyUs/WhyUs";
 import { Container } from "@/components/ui/container/Container";
+import { ContainerCenter } from "@/components/ui/container/ContainerCenter";
 
 export default function Home() {
   return (
     <main className="flex flex-col gap-8 md:gap-20">
       <Container className="flex flex-col gap-8 md:gap-20">
         <Hero />
-        <Container className="flex flex-col gap-8 md:gap-20">
-          <Allies />
-          <Protections />
-          <HassleFree />
-          <Feedback />
-          <WhyUs />
+        <Container>
+          <ContainerCenter className="flex flex-col gap-8 md:gap-20">
+            <Allies />
+            <Protections />
+            <HassleFree />
+            <Feedback />
+            <WhyUs />
+          </ContainerCenter>
         </Container>
       </Container>
       <Testimonials />
-      <Container className="flex flex-col gap-8 md:gap-20">
-        <FAQ />
-        <OurService />
-        <BeforeAfter />
+      <Container>
+        <ContainerCenter className="flex flex-col gap-8 md:gap-20">
+          <FAQ />
+          <OurService />
+          <BeforeAfter />
+        </ContainerCenter>
       </Container>
       <LetsFind />
     </main>

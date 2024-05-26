@@ -4,6 +4,7 @@ import { Banner } from "@/components/ui/banner/banner";
 import { Container } from "@/components/ui/container/Container";
 import { Footer } from "@/components/pages/home/footer/Footer";
 import { Navigation } from "@/components/pages/nav/Navigation";
+import { ContainerCenter } from "@/components/ui/container/ContainerCenter";
 
 export const metadata: Metadata = {
   title: "EffortlessRenovation",
@@ -27,7 +28,9 @@ export default function RootLayout({
           </p>
         </Banner>
         <Container>
-          <Navigation />
+          <ContainerCenter>
+            <Navigation />
+          </ContainerCenter>
         </Container>
         {children}
         <Footer />
