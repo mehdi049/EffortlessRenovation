@@ -7,6 +7,14 @@
 }
 
 @font-face {
+  font-family: "inter-medium";
+  font-style: normal;
+  src: url("/fonts/inter/Inter-Medium.otf");
+  src: url("/fonts/inter/Inter-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
   font-family: "inter-semibold";
   font-style: normal;
   src: url("/fonts/inter/Inter-SemiBold.otf");
@@ -24,6 +32,11 @@
 
 .font-inter {
   font-family: "inter", sans-serif;
+  font-weight: normal;
+}
+
+.font-medium {
+  font-family: "inter-medium", sans-serif;
   font-weight: normal;
 }
 

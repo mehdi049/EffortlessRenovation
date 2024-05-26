@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Button } from "../ui/button/Button";
-import { H1 } from "../ui/typography/H1";
+import { Button } from "../../../ui/button/Button";
+import { H1 } from "../../../ui/typography/H1";
 
 export const Hero = () => {
   return (

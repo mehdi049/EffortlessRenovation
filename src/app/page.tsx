@@ -1,4 +1,6 @@
-import { Hero } from "@/components/hero/Hero";
+import { Allies } from "@/components/pages/home/allies/Allies";
+import { Hero } from "@/components/pages/home/hero/Hero";
+import { Protections } from "@/components/pages/home/protections/Protections";
 import { Banner } from "@/components/ui/banner/banner";
 import { Container } from "@/components/ui/container/Container";
 import { Navigation } from "@/components/ui/nav/Navigation";
@@ -9,6 +11,10 @@ export default function Home() {
     <main>
       <Container>
         <Hero />
+        <Container>
+          <Allies />
+          <Protections />
+        </Container>
       </Container>
     </main>
   );

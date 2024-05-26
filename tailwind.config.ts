@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         black: "#222222",
+        "gray-100": "#F4F3F1",
       },
       fontSize: {
         "5xl": ["50px", "53px"],
