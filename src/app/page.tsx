@@ -4,6 +4,7 @@ import { BeforeAfter } from "@/components/pages/home/beforeAfter/BeforeAfter";
 import { Feedback } from "@/components/pages/home/feedback/Feedback";
 import { HassleFree } from "@/components/pages/home/hassleFree/HassleFree";
 import { Hero } from "@/components/pages/home/hero/Hero";
+import { LetsFind } from "@/components/pages/home/letsFind/LetsFind";
 import { OurService } from "@/components/pages/home/ourService/OurService";
 import { Protections } from "@/components/pages/home/protections/Protections";
 import { Testimonials } from "@/components/pages/home/testimonials/Testimonials";
@@ -29,6 +30,7 @@ export default function Home() {
         <OurService />
         <BeforeAfter />
       </Container>
+      <LetsFind />
     </main>
   );
 }
