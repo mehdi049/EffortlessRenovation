@@ -13,10 +13,10 @@ import { Container } from "@/components/ui/container/Container";
 
 export default function Home() {
   return (
-    <main>
-      <Container>
+    <main className="flex flex-col gap-8 md:gap-20">
+      <Container className="flex flex-col gap-8 md:gap-20">
         <Hero />
-        <Container>
+        <Container className="flex flex-col gap-8 md:gap-20">
           <Allies />
           <Protections />
           <HassleFree />
@@ -25,7 +25,7 @@ export default function Home() {
         </Container>
       </Container>
       <Testimonials />
-      <Container>
+      <Container className="flex flex-col gap-8 md:gap-20">
         <FAQ />
         <OurService />
         <BeforeAfter />

@@ -60,10 +60,10 @@ export const WhyUs = () => {
     },
   ];
   return (
-    <div className="mb-12">
+    <div>
       <H3 className="text-center">Why Choose Us?</H3>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 my-16 lg:px-24">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-16 my-12 md:my-16 lg:px-24">
         {items.map((item, i) => {
           return (
             <Item
@@ -76,7 +76,7 @@ export const WhyUs = () => {
         })}
       </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-16 my-16 rounded-xl border border-gray-100 py-8 shadow-sm">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-16 my-16 rounded-xl border border-gray-100 py-8 px-4 shadow-sm">
         {highlights.map((highlight, i) => {
           return (
             <Highlight
@@ -98,11 +98,11 @@ type ItemProps = {
 };
 const Item = ({ icon, title, description }: ItemProps) => {
   return (
-    <div className="flex flex-col gap-8 items-center justify-center max-w-sm">
+    <div className="flex flex-col gap-4 md:gap-8 items-center justify-center md:max-w-sm">
       <div className="rounded-xl border border-gray-100 p-6">
         <Image src={`/vectors/${icon}`} alt="" width={32} height={32} />
       </div>
-      <p className="font-semibold text-2xl">{title}</p>
+      <p className="font-semibold text-xl md:text-2xl">{title}</p>
       <p className="text-center">{description}</p>
     </div>
   );
@@ -116,7 +116,7 @@ const Highlight = ({ title, description }: HighlightProps) => {
   return (
     <div className="flex flex-col gap-2 items-center justify-center">
       <Image src={`/vectors/check-round.svg`} alt="" width={32} height={32} />
-      <p className="font-semibold text-4xl">{title}</p>
+      <p className="font-semibold text-3xl md:text-4xl text-center">{title}</p>
       <p className="text-center text-lg">{description}</p>
     </div>
   );

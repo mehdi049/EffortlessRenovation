@@ -30,8 +30,8 @@ export const Feedback = () => {
     },
   ];
   return (
-    <div className="mb-12 [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
-      <div className="flex gap-4 items-center justify-center md:justify-start animate-infinite-scroll">
+    <div className="[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] overflow-hidden">
+      <div className="flex gap-2 md:gap-4 items-center justify-center md:justify-start animate-infinite-scroll">
         {items.map((item, i) => {
           return <Item key={i} profile={item.profile} text={item.text} />;
         })}
@@ -40,7 +40,7 @@ export const Feedback = () => {
         })}
       </div>
       <div
-        className="flex gap-4 items-center justify-center md:justify-start animate-infinite-scroll mt-4"
+        className="flex gap-4 items-center justify-center md:justify-start animate-infinite-scroll mt-2 md:mt-4"
         aria-hidden="true"
       >
         {items2.map((item, i) => {
@@ -60,7 +60,7 @@ type ItemProps = {
 };
 const Item = ({ profile, text }: ItemProps) => {
   return (
-    <div className="rounded-full p-2 pr-8 bg-gray-100 flex gap-4 items-center justify-start min-w-max">
+    <div className="rounded-full p-2 pr-4 md:pr-8 bg-gray-100 flex gap-2 md:gap-4 items-center justify-start min-w-max">
       <Image
         src={`/vectors/${profile}`}
         alt="profile"

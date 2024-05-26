@@ -4,14 +4,14 @@ import Image from "next/image";
 
 export const LetsFind = () => {
   return (
-    <div className="bg-gray-100 py-12">
+    <div className="bg-gray-100 py-8 md:py-12">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           <div className="max-w-96">
             <p className="text-xs uppercase opacity-60 font-semibold">
               / let’s find
             </p>
-            <p className="font-semibold text-3xl mt-4">
+            <p className="font-semibold text-2xl md:text-3xl mt-4">
               Transform Your Space Easily—Contact Us to Begin Renovation!
             </p>
           </div>

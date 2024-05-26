@@ -28,10 +28,10 @@ export const FAQ = () => {
     },
   ];
   return (
-    <div className="mb-12 max-w-5xl mx-auto">
+    <div className="max-w-5xl mx-auto">
       <H2 className="text-center">Frequently asked questions</H2>
 
-      <div className="flex flex-col gap-4 items-center my-16">
+      <div className="flex flex-col gap-4 items-center my-8 md:my-16">
         {items.map((item, i) => {
           return <Item key={i} title={item.title} text={item.text} />;
         })}

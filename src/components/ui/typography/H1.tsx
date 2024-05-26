@@ -3,5 +3,7 @@ export type HProps = {
   className?: string;
 };
 export const H1 = ({ children, className }: HProps) => {
-  return <h1 className={`font-ht text-8xl ${className}`}>{children}</h1>;
+  return (
+    <h1 className={`font-ht text-5xl md:text-8xl ${className}`}>{children}</h1>
+  );
 };

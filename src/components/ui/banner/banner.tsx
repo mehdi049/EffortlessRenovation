@@ -10,7 +10,7 @@ export const Banner = ({ children }: BannerProps) => {
   return (
     <>
       {isDisplayed && (
-        <div className="bg-black px-8 py-4 flex justify-between gap-4">
+        <div className="bg-black px-4 md:px-8 py-4 flex justify-between gap-4">
           <div>{children}</div>
 
           <div>

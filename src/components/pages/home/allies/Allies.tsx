@@ -23,7 +23,7 @@ export const Allies = () => {
     },
   ];
   return (
-    <div className="mb-12 mt-16">
+    <div>
       <div className="grid gap-4 grid-cols-1 md:grid-cols-2 items-center">
         <H2 className="max-w-xl">
           We&apos;re Your Renovation Allies, Not Salespeople
@@ -34,10 +34,10 @@ export const Allies = () => {
           ensure every installation meets the highest standards. 
         </p>
       </div>
-      <div className="grid gap-4 grid-cols-1 md:grid-cols-2 items-center mt-16">
+      <div className="grid gap-4 grid-cols-1 md:grid-cols-2 items-center mt-8 md:mt-16">
         <Image src={"/images/img1.png"} width={572} height={572} alt="img" />
 
-        <div className="flex flex-col gap-8 md:gap-16">
+        <div className="flex flex-col gap-8 md:gap-16 mt-8 md:mt-0">
           {items.map((item, i) => {
             return (
               <Item
@@ -66,9 +66,9 @@ const Item = ({ icon, title, description }: ItemProps) => {
         <div>
           <Image src={`/vectors/${icon}`} width={32} height={32} alt="icon" />
         </div>
-        <p className="font-semibold text-2xl">{title}</p>
+        <p className="font-semibold text-xl md:text-2xl">{title}</p>
       </div>
-      <p className="text-lg mt-4 max-w-md">{description}</p>
+      <p className="md:text-lg mt-4 max-w-md">{description}</p>
     </div>
   );
 };

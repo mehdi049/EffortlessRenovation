@@ -5,3 +5,9 @@
   z-index: 20;
   background-color: #f4f3f1;
 }
+
+@media screen and (max-width: 768px) {
+  .nav-point:last-child {
+    background-color: #fff;
+  }
+}

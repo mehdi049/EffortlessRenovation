@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Button } from "../../../ui/button/Button";
-import { H1 } from "../../../ui/typography/H1";
 import { H3 } from "@/components/ui/typography/H3";
 
 export const HassleFree = () => {
@@ -31,14 +30,14 @@ export const HassleFree = () => {
     },
   ];
   return (
-    <div className="flex flex-col sm:flex-row gap-4 mb-12">
+    <div className="flex flex-col sm:flex-row gap-4">
       <div className="flex flex-col gap-4 md:gap-12 w-full max-w-lg">
         <H3>Hassle-Free Process, Best Price Guaranteed</H3>
         <p className="text-lg">Here&apos;s how it works:</p>
         <Image src={"/images/img2.png"} alt="" width={450} height={500} />
       </div>
 
-      <div className="bg-gray-100 p-16 rounded-xl">
+      <div className="md:bg-gray-100 md:p-16 md:rounded-xl mt-4 md:mt-0">
         <div className="flex flex-col gap-8 relative">
           <div className="w-[1px] h-full absolute top-0 left-5 bg-gray-300"></div>
           {items.map((item, i) => {
@@ -48,7 +47,7 @@ export const HassleFree = () => {
           })}
         </div>
 
-        <Button className="mt-16">Get An Estimate</Button>
+        <Button className="mt-8 md:mt-16">Get An Estimate</Button>
       </div>
     </div>
   );
@@ -61,7 +60,7 @@ type ItemProps = {
 };
 const Item = ({ index, title, text }: ItemProps) => {
   return (
-    <div className="flex gap-8 items-start nav-point relative">
+    <div className="flex gap-6 md:gap-8 items-start nav-point relative">
       <div>
         <span className="w-10 h-10 flex items-center justify-center text-white bg-black rounded-full relative z-20">
           {index}

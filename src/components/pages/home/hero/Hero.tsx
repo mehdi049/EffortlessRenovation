@@ -5,22 +5,19 @@ import { H1 } from "../../../ui/typography/H1";
 export const Hero = () => {
   return (
     <div
-      className="bg-center bg-cover px-8 md:pb-16 pt-64 rounded-lg relative"
+      className="bg-center bg-cover px-4 md:px-8 md:pb-16 pt-64 rounded-lg relative"
       style={{ backgroundImage: "url(/images/hero-bg.png)" }}
     >
       <H1 className="text-white">
         Renovate <br />
         Effortlessly.
       </H1>
-      <p
-        className="text-white max-w-[650px] text-2xl mt-6"
-        style={{ lineHeight: "40px" }}
-      >
+      <p className="text-white max-w-[650px] text-lg md:text-2xl mt-6">
         Effortlessly compare quotes from top quality contractors, and get peace
         of mind with warranty & price protections.
       </p>
       <Button
-        className="mt-6"
+        className="mt-6 hidden md:flex"
         variant="secondary"
         iconRight={
           <Image
@@ -34,7 +31,7 @@ export const Hero = () => {
         Get An Estimate
       </Button>
 
-      <div className="bg-white px-8 py-12 rounded-tl-xl rounded-tr-xl md:rounded-tr-none flex gap-4 md:gap-8 items-center justify-center max-w-[450px] md:absolute mt-8 md:mt-0 right-0 bottom-0">
+      <div className="bg-white -mx-4 md:mx-0 px-4 md:px-8 py-6 lg:py-12 rounded-tl-3xl rounded-tr-3xl md:rounded-tl-xl md:rounded-tr-none flex gap-4 md:gap-8 items-center justify-center md:max-w-[450px] md:absolute mt-8 md:mt-0 right-0 bottom-0">
         <div>
           <Image src={"/vectors/GAF.svg"} width={130} height={45} alt="GAF" />
         </div>

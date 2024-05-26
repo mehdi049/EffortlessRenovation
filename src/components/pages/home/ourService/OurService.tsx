@@ -21,8 +21,8 @@ export const OurService = () => {
     },
   ];
   return (
-    <div className="mb-12">
-      <div className="flex flex-wrap gap-4 items-center justify-between">
+    <div>
+      <div className="flex flex-wrap gap-4 items-center justify-between mt-8 md:mt-0">
         <H2>Our Service Range</H2>
         <div>
           <p className="text-lg">
@@ -30,7 +30,7 @@ export const OurService = () => {
           </p>
         </div>
       </div>
-      <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-center mt-16">
+      <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-center mt-8 md:mt-16">
         {items.map((item, i) => {
           return <Item key={i} icon={item.icon} title={item.title} />;
         })}
@@ -45,8 +45,8 @@ type ItemProps = {
 };
 const Item = ({ icon, title }: ItemProps) => {
   return (
-    <div className="rounded-xl bg-gray-100 p-12 h-full">
-      <div className="flex flex-col gap-6 items-center justify-between">
+    <div className="rounded-xl bg-gray-100 p-8 md:p-12 h-full">
+      <div className="flex flex-row md:flex-col gap-6 items-center md:justify-between">
         <Image src={`/vectors/${icon}`} width={56} height={56} alt="icon" />
 
         <p className="font-medium text-2xl">{title}</p>

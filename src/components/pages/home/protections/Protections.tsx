@@ -25,7 +25,7 @@ export const Protections = () => {
     },
   ];
   return (
-    <div className="mb-12">
+    <div>
       <p className="text-2xl font-medium">
         Effortless Protections: Extra Peace of Mind
       </p>
@@ -53,7 +53,7 @@ type ItemProps = {
 const Item = ({ icon, title, description }: ItemProps) => {
   return (
     <div className="rounded-xl bg-gray-100 p-4 h-full">
-      <div className="flex flex-col gap-4 max-w-44">
+      <div className="flex flex-col gap-4 md:max-w-44">
         <Image
           src={`/vectors/${icon}`}
           width={34}
@@ -64,7 +64,7 @@ const Item = ({ icon, title, description }: ItemProps) => {
 
         <p className="font-medium text-xl">{title}</p>
 
-        <p className="">{description}</p>
+        <p>{description}</p>
       </div>
     </div>
   );
