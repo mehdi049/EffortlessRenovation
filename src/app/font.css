@@ -23,7 +23,8 @@
 }
 
 .font-inter {
-  font-family: "circular-medium", sans-serif;
+  font-family: "inter", sans-serif;
+  font-weight: normal;
 }
 
 .font-semibold {
