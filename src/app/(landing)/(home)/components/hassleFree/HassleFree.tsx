@@ -1,6 +1,8 @@
 import Image from "next/image";
-import { Button } from "../../../ui/form/button/Button";
+import { Button } from "../../../../../components/ui/form/button/Button";
 import { H3 } from "@/components/ui/typography/H3";
+import Link from "next/link";
+import { ROUTES } from "@/routes";
 
 export const HassleFree = () => {
   const items = [
@@ -47,7 +49,9 @@ export const HassleFree = () => {
           })}
         </div>
 
-        <Button className="mt-8 md:mt-16">Get An Estimate</Button>
+        <Link href={ROUTES.ESTIMATE} className="mt-8 md:mt-16 inline-block">
+          <Button>Get An Estimate</Button>
+        </Link>
       </div>
     </div>
   );

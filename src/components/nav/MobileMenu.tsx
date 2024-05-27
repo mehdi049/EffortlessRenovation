@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/form/button/Button";
+import { ROUTES } from "@/routes";
 import Image from "next/image";
+import Link from "next/link";
 
 type MobileMenuProps = {
   onClose: () => void;
@@ -37,7 +39,9 @@ export const MobileMenu = ({ onClose }: MobileMenuProps) => {
           Testimonials
         </a>
         <div className="py-3">
-          <Button className="w-full text-center">Get An Estimate</Button>
+          <Link href={ROUTES.ESTIMATE}>
+            <Button className="w-full text-center">Get An Estimate</Button>
+          </Link>
         </div>
       </div>
     </div>

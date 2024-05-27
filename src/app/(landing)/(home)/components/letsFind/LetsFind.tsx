@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/form/button/Button";
 import { Container } from "@/components/ui/container/Container";
 import { ContainerCenter } from "@/components/ui/container/ContainerCenter";
 import Image from "next/image";
+import Link from "next/link";
+import { ROUTES } from "@/routes";
 
 export const LetsFind = () => {
   return (
@@ -27,7 +29,12 @@ export const LetsFind = () => {
               />
             </div>
             <div className="flex flex-col sm:flex-row gap-2 items-center justify-center">
-              <Button className="w-full lg:max-w-max">Get An Estimate</Button>
+              <Link
+                href={ROUTES.ESTIMATE}
+                className="w-full lg:max-w-max block"
+              >
+                <Button className="w-full">Get An Estimate</Button>
+              </Link>
               <Button variant="secondary" className="w-full lg:max-w-max">
                 Contact Us
               </Button>

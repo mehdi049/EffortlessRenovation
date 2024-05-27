@@ -116,8 +116,8 @@ const Highlight = ({ title, description }: HighlightProps) => {
   return (
     <div className="flex flex-col gap-2 items-center justify-center">
       <Image src={`/vectors/check-round.svg`} alt="" width={32} height={32} />
-      <p className="font-semibold text-3xl md:text-4xl text-center">{title}</p>
-      <p className="text-center text-lg">{description}</p>
+      <p className="font-semibold text-2xl md:text-4xl text-center">{title}</p>
+      <p className="text-center md:text-lg">{description}</p>
     </div>
   );
 };
