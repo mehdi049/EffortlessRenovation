@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button/Button";
+import { Button } from "@/components/ui/form/button/Button";
 import { Container } from "@/components/ui/container/Container";
 import { ContainerCenter } from "@/components/ui/container/ContainerCenter";
 import Image from "next/image";

@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button/Button";
+import { Button } from "@/components/ui/form/button/Button";
 import Image from "next/image";
 
 type MobileMenuProps = {

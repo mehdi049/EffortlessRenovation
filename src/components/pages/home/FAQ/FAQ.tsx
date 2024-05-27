@@ -1,5 +1,5 @@
 "use client";
-import { Button } from "@/components/ui/button/Button";
+import { Button } from "@/components/ui/form/button/Button";
 import { H2 } from "@/components/ui/typography/H2";
 import Image from "next/image";
 import { useState } from "react";

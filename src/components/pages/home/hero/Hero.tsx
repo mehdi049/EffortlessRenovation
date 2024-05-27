@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Button } from "../../../ui/button/Button";
+import { Button } from "../../../ui/form/button/Button";
 import { H1 } from "../../../ui/typography/H1";
 import { ContainerCenter } from "@/components/ui/container/ContainerCenter";
 

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Button } from "../../../ui/button/Button";
+import { Button } from "../../../ui/form/button/Button";
 import { H3 } from "@/components/ui/typography/H3";
 
 export const HassleFree = () => {
