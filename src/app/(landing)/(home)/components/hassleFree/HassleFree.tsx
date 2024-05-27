@@ -32,7 +32,7 @@ export const HassleFree = () => {
     },
   ];
   return (
-    <div className="flex flex-col sm:flex-row gap-4">
+    <div className="flex flex-col sm:flex-row gap-4" id="our-process">
       <div className="flex flex-col gap-4 md:gap-12 w-full max-w-lg">
         <H3>Hassle-Free Process, Best Price Guaranteed</H3>
         <p className="text-lg">Here&apos;s how it works:</p>

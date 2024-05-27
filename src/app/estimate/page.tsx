@@ -45,7 +45,8 @@ export default function Page() {
       >
         {currentStep > 1 && (
           <Button
-            className="min-w-40"
+            className="min-w-40 border-2 border-gray-200"
+            variant="secondary"
             onClick={() => {
               if (currentStep > 1) setCurrentStep(currentStep - 1);
             }}

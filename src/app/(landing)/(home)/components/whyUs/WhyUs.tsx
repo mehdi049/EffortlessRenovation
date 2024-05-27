@@ -60,7 +60,7 @@ export const WhyUs = () => {
     },
   ];
   return (
-    <div>
+    <div id="why-us">
       <H3 className="text-center">Why Choose Us?</H3>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-16 my-12 md:my-16 lg:px-24">

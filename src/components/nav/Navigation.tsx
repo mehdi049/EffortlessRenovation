@@ -26,16 +26,16 @@ export const Navigation = ({ cta = true }: NavigationProps) => {
           </Link>
         </li>
         <li className="hidden lg:block">
-          <a href="#">Why us</a>
+          <a href={ROUTES.HOME + "#why-us"}>Why us</a>
         </li>
         <li className="hidden lg:block">
-          <a href="#">Our Process</a>
+          <a href={ROUTES.HOME + "#our-process"}>Our Process</a>
         </li>
         <li className="hidden lg:block">
-          <a href="#">Testimonials</a>
+          <a href={ROUTES.HOME + "#testimonials"}>Testimonials</a>
         </li>
         <li className="hidden lg:block">
-          <a href="#">FAQ</a>
+          <a href={ROUTES.HOME + "#faq"}>FAQ</a>
         </li>
       </ul>
 

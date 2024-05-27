@@ -28,7 +28,7 @@ export const FAQ = () => {
     },
   ];
   return (
-    <div className="max-w-5xl mx-auto">
+    <div className="max-w-5xl mx-auto" id="faq">
       <H2 className="text-center">Frequently asked questions</H2>
 
       <div className="flex flex-col gap-4 items-center my-8 md:my-16">

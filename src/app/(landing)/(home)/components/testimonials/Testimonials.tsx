@@ -13,6 +13,7 @@ export const Testimonials = () => {
           ? "url(/images/hero-bg-2-mobile.png)"
           : "url(/images/hero-bg-2.png)",
       }}
+      id="testimonials"
     >
       <div className=" bg-black bg-opacity-90 flex flex-col gap-4 md:gap-8 px-8 md:px-16 py-8 md:py-32">
         <p className="text-xs uppercase text-white">Featured Testimonial</p>
