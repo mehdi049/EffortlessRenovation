@@ -17,8 +17,7 @@ export const Input = ({
       onChange={onChange}
       className={className}
       placeholder={placeholder}
-    >
-      {value}
-    </input>
+      value={value}
+    />
   );
 };
