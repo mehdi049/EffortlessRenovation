@@ -29,13 +29,19 @@ export const MobileMenu = ({ onClose }: MobileMenuProps) => {
         />
       </div>
       <div className="flex flex-col divide-y divide-gray-300 mt-2">
-        <a href="" className="text-black text-lg py-3">
+        <a href={ROUTES.HOME + "#why-us"} className="text-black text-lg py-3">
           Why us
         </a>
-        <a href="" className="text-black text-lg py-3">
+        <a
+          href={ROUTES.HOME + "#our-process"}
+          className="text-black text-lg py-3"
+        >
           Our Process
         </a>
-        <a href="" className="text-black text-lg py-3">
+        <a
+          href={ROUTES.HOME + "#testimonials"}
+          className="text-black text-lg py-3"
+        >
           Testimonials
         </a>
         <div className="py-3">
