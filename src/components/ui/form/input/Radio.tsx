@@ -16,7 +16,7 @@ export const Radio = ({
 
   return (
     <div
-      className={`flex gap-4 items-center justify-start border-2 border-gray-300 rounded-lg p-4 cursor-pointer hover:border-gray-500 hover:shadow-md ${className}`}
+      className={`flex gap-4 items-center justify-start border-2 border-gray-300 rounded-lg p-4 cursor-pointer hover:border-gray-500 hover:shadow-md bg-white ${className}`}
       onClick={() => {
         ref?.current?.click();
         onChange;

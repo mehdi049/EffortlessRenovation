@@ -7,11 +7,11 @@ import { Step5 } from "@/app/estimate/components/step5/Step5";
 import { ContainerSteps } from "@/components/ui/container/ContainerSteps";
 import { Button } from "@/components/ui/form/button/Button";
 import { useContext, useState } from "react";
-import { EstimateContext } from "./context/EstimateContext";
+import { EstimateContext, formData } from "./context/EstimateContext";
+import { Step0 } from "./components/step0/Step0";
 
 export default function Page() {
-  const [currentStep, setCurrentStep] = useState(1);
-  const { form } = useContext(EstimateContext);
+  const { setForm, form } = useContext(EstimateContext);
   return (
     <>
       <div className="mb-4 hidden">
@@ -31,24 +31,33 @@ export default function Page() {
         <br />
       </div>
       <ContainerSteps>
-        {currentStep === 1 && <Step1 />}
-        {currentStep === 2 && <Step2 />}
-        {currentStep === 3 && <Step3 />}
-        {currentStep === 4 && <Step4 />}
-        {currentStep === 5 && <Step5 />}
+        {form.step === 0 && (
+          <Step0
+            goNextStep={() =>
+              setForm((prevState: formData) => ({
+                ...prevState,
+                step: 1,
+              }))
+            }
+          />
+        )}
+        {form.step === 1 && <Step1 />}
+        {form.step === 2 && <Step2 />}
+        {form.step === 3 && <Step3 />}
+        {form.step === 4 && <Step4 />}
+        {form.step === 5 && <Step5 />}
       </ContainerSteps>
 
-      <div
-        className={`flex ${
-          currentStep === 1 ? "justify-end" : "justify-between"
-        }`}
-      >
-        {currentStep > 1 && (
+      <div className={`${form.step === 0 ? "hidden" : "flex"} justify-between`}>
+        {form.step > 0 && (
           <Button
             className="min-w-40 border-2 border-gray-200"
             variant="secondary"
             onClick={() => {
-              if (currentStep > 1) setCurrentStep(currentStep - 1);
+              setForm((prevState: formData) => ({
+                ...prevState,
+                step: form.step - 1,
+              }));
             }}
           >
             Back
@@ -57,10 +66,14 @@ export default function Page() {
         <Button
           className="min-w-40"
           onClick={() => {
-            if (currentStep < 5) setCurrentStep(currentStep + 1);
+            if (form.step < 5)
+              setForm((prevState: formData) => ({
+                ...prevState,
+                step: form.step + 1,
+              }));
           }}
         >
-          {currentStep < 5 ? "Next" : "Submit"}
+          {form.step < 5 ? "Next" : "Submit"}
         </Button>
       </div>
     </>

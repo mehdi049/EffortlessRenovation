@@ -2,6 +2,7 @@ import { Container } from "@/components/ui/container/Container";
 import { Navigation } from "@/components/nav/Navigation";
 import { ContainerCenter } from "@/components/ui/container/ContainerCenter";
 import { EstimateContextProvider } from "./context/EstimateContext";
+import { ProgressBar } from "./components/progressBar/ProgressBar";
 
 export default function RootLayout({
   children,
@@ -16,11 +17,14 @@ export default function RootLayout({
         </ContainerCenter>
       </Container>
       <main>
-        <Container className="bg-gray-100 min-h-screen flex flex-col items-center justify-center gap-4">
-          <ContainerCenter className="flex flex-col gap-8 md:gap-20 w-full">
-            <EstimateContextProvider>{children}</EstimateContextProvider>
-          </ContainerCenter>
-        </Container>
+        <EstimateContextProvider>
+          <ProgressBar />
+          <Container className="bg-gray-100 min-h-screen flex flex-col items-center justify-center gap-4">
+            <ContainerCenter className="flex flex-col gap-8 md:gap-20 max-w-4xl mx-auto py-8">
+              {children}
+            </ContainerCenter>
+          </Container>
+        </EstimateContextProvider>
       </main>
     </div>
   );

@@ -2,6 +2,7 @@
 import { createContext, useState } from "react";
 
 export const initFormData = {
+  step: 0,
   zip: "",
   status: "",
   renovate: [],
@@ -12,6 +13,7 @@ export const initFormData = {
 };
 
 export type formData = {
+  step: 0;
   zip: string;
   status: string;
   renovate: string[];
