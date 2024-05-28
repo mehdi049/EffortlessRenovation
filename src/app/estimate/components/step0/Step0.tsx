@@ -5,9 +5,11 @@ type Step0Props = {
   goNextStep: () => void;
 };
 export const Step0 = ({ goNextStep }: Step0Props) => {
+  const className =
+    "bg-white p-6 lg:p-8 rounded-lg border border-gray-200 shadow-sm flex flex-col gap-4 h-full";
   return (
     <>
-      <div className="bg-white p-6 lg:p-8 rounded-lg border border-gray-200 shadow-sm flex flex-col gap-4 h-full">
+      <div className={className}>
         <Image
           src={"/images/step0-img-1.png"}
           alt=""
@@ -16,17 +18,14 @@ export const Step0 = ({ goNextStep }: Step0Props) => {
           className="mx-auto"
         />
 
-        <p className="text-center">
+        <p className="text-center md:min-h-20">
           Answer a few questions to start on estimates for your renovation.
         </p>
         <Button onClick={() => goNextStep()} className="w-full">
           Get your estimates
         </Button>
       </div>
-      <div
-        className="bg-white p-6 lg:p-8 rounded-lg border border-gray-200 shadow-sm flex flex-col gap-4 justify-center h-full"
-        onClick={() => goNextStep()}
-      >
+      <div className={className} onClick={() => goNextStep()}>
         <Image
           src={"/images/step0-img-2.png"}
           alt=""
@@ -35,7 +34,7 @@ export const Step0 = ({ goNextStep }: Step0Props) => {
           className="mx-auto"
         />
 
-        <p className="text-center">
+        <p className="text-center md:min-h-20">
           Book a complimentary consultation with a Block renovation consultant
           to discuss your remodel goals.
         </p>

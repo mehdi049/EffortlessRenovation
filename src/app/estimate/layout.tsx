@@ -16,16 +16,12 @@ export default function RootLayout({
           <Navigation cta={false} />
         </ContainerCenter>
       </Container>
-      <main>
-        <EstimateContextProvider>
-          <ProgressBar />
-          <Container className="bg-gray-100 min-h-screen flex flex-col items-center justify-center gap-4">
-            <ContainerCenter className="flex flex-col gap-8 md:gap-20 max-w-4xl mx-auto py-8">
-              {children}
-            </ContainerCenter>
-          </Container>
-        </EstimateContextProvider>
-      </main>
+      <EstimateContextProvider>
+        <ProgressBar />
+        <Container className="bg-gray-100 min-h-screen flex flex-col items-center justify-center gap-4">
+          {children}
+        </Container>
+      </EstimateContextProvider>
     </div>
   );
 }
