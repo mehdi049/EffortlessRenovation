@@ -14,23 +14,6 @@ export default function Page() {
 
   return (
     <Animate dep={form.step.toString()}>
-      <div className="mb-4 hidden">
-        ZIP: {form.zip}
-        <br />
-        status: {form.status}
-        <br />
-        renovate: {form.renovate + ""}
-        <br />
-        name: {form.name}
-        <br />
-        email: {form.email}
-        <br />
-        referralCode: {form.referralCode}
-        <br />
-        phone: {form.phone}
-        <br />
-      </div>
-
       {form.step === 0 && (
         <Step0
           goNextStep={() =>
