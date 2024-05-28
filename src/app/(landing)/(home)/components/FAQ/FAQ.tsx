@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/form/button/Button";
 import { H2 } from "@/components/ui/typography/H2";
+import { ROUTES } from "@/routes";
 import Image from "next/image";
 import { useState } from "react";
 export const FAQ = () => {
@@ -39,20 +40,22 @@ export const FAQ = () => {
 
       <div className="flex gap-4 lg:gap-8 flex-wrap justify-center items-center">
         <p>Do you still have questions about us?</p>
-        <Button
-          variant="secondary"
-          size="sm"
-          iconRight={
-            <Image
-              src={"/vectors/arrow-right.svg"}
-              alt=""
-              width={16}
-              height={16}
-            />
-          }
-        >
-          Get in touch
-        </Button>
+        <a href={ROUTES.ESTIMATE}>
+          <Button
+            variant="secondary"
+            size="sm"
+            iconRight={
+              <Image
+                src={"/vectors/arrow-right.svg"}
+                alt=""
+                width={16}
+                height={16}
+              />
+            }
+          >
+            Get in touch
+          </Button>
+        </a>
       </div>
     </div>
   );
