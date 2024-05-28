@@ -1,30 +1,47 @@
+"use client";
 import { H2 } from "@/components/ui/typography/H2";
 import Image from "next/image";
 
 export const BeforeAfter = () => {
+  const moveRight = () => {
+    const el = document.getElementById(`hscroll`) as HTMLElement;
+    el.scrollLeft += 170;
+  };
+
+  const moveLeft = () => {
+    const el = document.getElementById(`hscroll`) as HTMLElement;
+    el.scrollLeft -= 170;
+  };
   return (
     <div>
       <div className="flex flex-wrap gap-4 items-center justify-between">
         <H2>Before and After Transformation</H2>
         <div className="hidden md:flex items-center justify-end gap-2">
           <Image
-            src={"/vectors/arrow-next.svg"}
-            alt="next"
-            width={48}
-            height={48}
-          />
-          <Image
-            src={"/vectors/arrow-previous.svg"}
+            src={"/vectors/arrow-left-round.svg"}
             alt="previous"
             width={48}
             height={48}
+            className="cursor-pointer"
+            onClick={moveLeft}
+          />
+          <Image
+            src={"/vectors/arrow-right-round.svg"}
+            alt="next"
+            width={48}
+            height={48}
+            className="cursor-pointer"
+            onClick={moveRight}
           />
         </div>
       </div>
 
       <hr className="my-12 hidden md:block" />
 
-      <div className="flex justify-around gap-2 overflow-hidden mt-4 md:mt-0 overflow-scroll">
+      <div
+        className="flex justify-around gap-2 mt-4 md:mt-0 overflow-scroll scroll-smooth"
+        id="hscroll"
+      >
         <Image
           src={"/images/ba1.png"}
           alt="ba1"
@@ -57,16 +74,20 @@ export const BeforeAfter = () => {
 
       <div className="flex md:hidden items-center justify-center gap-2 mt-4">
         <Image
-          src={"/vectors/arrow-next.svg"}
-          alt="next"
-          width={48}
-          height={48}
-        />
-        <Image
-          src={"/vectors/arrow-previous.svg"}
+          src={"/vectors/arrow-left-round.svg"}
           alt="previous"
           width={48}
           height={48}
+          className="cursor-pointer"
+          onClick={moveLeft}
+        />
+        <Image
+          src={"/vectors/arrow-right-round.svg"}
+          alt="next"
+          width={48}
+          height={48}
+          className="cursor-pointer"
+          onClick={moveRight}
         />
       </div>
     </div>

@@ -5,24 +5,25 @@ import { Transition, TransitionStatus } from "react-transition-group";
 type AnimateProps = {
   children: React.ReactNode;
   dep?: string;
+  type?: "slide" | "opacity";
 };
 
 const duration = 300;
 
-export const Animate = ({ children, dep }: AnimateProps) => {
+export const Animate = ({ children, dep, type = "slide" }: AnimateProps) => {
   const [inProp, setInProp] = useState(false);
   const nodeRef = useRef(null);
 
   const defaultStyle = {
     transition: `all ${duration}ms ease-in-out`,
     opacity: 0,
-    marginTop: "-20px",
+    marginTop: type === "slide" ? "-20px" : "0px",
   };
 
   const transitionStyles: any = {
     entering: { opacity: 0 },
     entered: { opacity: 1, marginTop: "0px" },
-    exiting: { opacity: 0, marginLeft: "-2000px" },
+    exiting: { opacity: 0, marginLeft: type === "slide" ? "-2000px" : "0px" },
     exited: { opacity: 0 },
   };
 

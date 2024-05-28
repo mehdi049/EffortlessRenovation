@@ -27,7 +27,7 @@ export const Step0 = ({ goNextStep }: Step0Props) => {
             Get your estimates
           </Button>
         </div>
-        <div className={className} onClick={() => goNextStep()}>
+        <div className={className}>
           <Image
             src={"/images/step0-img-2.png"}
             alt=""
