@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import { Transition } from "react-transition-group";
+import { Transition, TransitionStatus } from "react-transition-group";
 
 type AnimateProps = {
   children: React.ReactNode;
@@ -19,7 +19,7 @@ export const Animate = ({ children, dep }: AnimateProps) => {
     marginTop: "-20px",
   };
 
-  const transitionStyles = {
+  const transitionStyles: any = {
     entering: { opacity: 0 },
     entered: { opacity: 1, marginTop: "0px" },
     exiting: { opacity: 0, marginLeft: "-2000px" },
