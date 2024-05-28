@@ -1,5 +1,5 @@
 "use client";
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 export const initFormData = {
   step: 0,
@@ -34,6 +34,12 @@ export const EstimateContextProvider = ({
   children,
 }: EstimateContextProviderProps) => {
   const [form, setForm] = useState(initFormData);
+
+  // scroll top on step update
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [form.step]);
+
   return (
     <EstimateContext.Provider value={{ form, setForm }}>
       {children}

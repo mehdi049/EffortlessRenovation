@@ -1,7 +1,7 @@
 import { formData } from "../estimate/context/EstimateContext";
 
 const API_PIPEDRIVE = "https://developers.pipedrive.com/docs/api/v1";
-export const submitEstimateFrom = async (form: formData) => {
+export const submitEstimateForm = async (form: formData) => {
   try {
     const response = await fetch(API_PIPEDRIVE, {
       method: "POST",

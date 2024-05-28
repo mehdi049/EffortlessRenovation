@@ -24,7 +24,7 @@ export const BeforeAfter = () => {
 
       <hr className="my-12 hidden md:block" />
 
-      <div className="flex justify-around gap-2 overflow-hidden mt-4 md:mt-0">
+      <div className="flex justify-around gap-2 overflow-hidden mt-4 md:mt-0 overflow-scroll">
         <Image
           src={"/images/ba1.png"}
           alt="ba1"

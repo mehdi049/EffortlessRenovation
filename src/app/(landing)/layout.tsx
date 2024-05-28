@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="relative">
+    <div className="relative overflow-x-hidden">
       <Banner>
         <p className="text-white text-sm">
           Special Launch Promo: FREE inspections normally cost $100{" "}

@@ -5,7 +5,7 @@ import { EstimateContext, formData } from "../../context/EstimateContext";
 import { ContainerSteps } from "@/components/ui/container/ContainerSteps";
 import { Button } from "@/components/ui/form/button/Button";
 import { ZodError, string, z } from "zod";
-import { submitEstimateFrom } from "@/app/service/estimateForm";
+import { submitEstimateForm } from "@/app/service/estimateForm";
 
 const formInputs = z.object({
   phone: string({
@@ -27,7 +27,7 @@ export const Step5 = () => {
       formInputs.parse({
         phone: form.phone,
       });
-      const response = await submitEstimateFrom(form as formData);
+      const response = await submitEstimateForm(form as formData);
       // if(response) then do someting
     } catch (error) {
       if (error instanceof ZodError) {

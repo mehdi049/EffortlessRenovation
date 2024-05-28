@@ -18,7 +18,7 @@ export default function RootLayout({
       </Container>
       <EstimateContextProvider>
         <ProgressBar />
-        <Container className="bg-gray-100 min-h-screen flex flex-col items-center justify-center gap-4">
+        <Container className="bg-gray-100 min-h-screen flex flex-col items-center justify-center gap-4 py-8">
           {children}
         </Container>
       </EstimateContextProvider>
