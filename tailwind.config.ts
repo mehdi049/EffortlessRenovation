@@ -10,11 +10,6 @@ const config = {
   ],
   prefix: "",
   theme: {
-    fontSize: {
-      "5xl": ["50px", "53px"],
-      "6xl": ["56px", "65px"],
-      "8xl": ["81px", "85px"],
-    },
     container: {
       center: true,
       padding: "2rem",
@@ -23,6 +18,11 @@ const config = {
       },
     },
     extend: {
+      fontSize: {
+        "5xl": ["50px", "53px"],
+        "6xl": ["56px", "65px"],
+        "8xl": ["81px", "85px"],
+      },
       colors: {
         black: "#141517",
         "gray-100": "#F4F3F1",
