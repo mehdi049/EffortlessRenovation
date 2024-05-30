@@ -10,8 +10,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div>
-      <Container>
+    <div className="relative">
+      <Container className="sticky top-0 bg-white z-50 border-b border-gray-100">
         <ContainerCenter>
           <Navigation cta={false} />
         </ContainerCenter>

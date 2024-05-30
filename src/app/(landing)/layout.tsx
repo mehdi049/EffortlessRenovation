@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="overflow-x-hidden">
+    <div className="relative">
       <Banner>
         <p className="text-white text-sm">
           Special Launch Promo: FREE inspections normally cost $100{" "}
@@ -27,7 +27,7 @@ export default function RootLayout({
           </a>
         </p>
       </Banner>
-      <Container>
+      <Container className="sticky top-0 bg-white z-50 border-b border-gray-100">
         <ContainerCenter>
           <Navigation />
         </ContainerCenter>
