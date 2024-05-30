@@ -78,10 +78,15 @@ const config = {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(-100%)" },
         },
+        "up-down": {
+          from: { marginTop: "-80px" },
+          to: { marginTop: "0px" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "up-down": "up-down 0.5s ease-out",
         "infinite-scroll": "infinite-scroll 25s linear infinite",
       },
     },

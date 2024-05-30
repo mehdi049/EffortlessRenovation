@@ -11,19 +11,21 @@ type NavigationProps = {
 };
 export const Navigation = ({ cta = true }: NavigationProps) => {
   const [isDisplayed, setIsDisplayed] = useState(false);
-  const [isNavDisplayed, setIsNavDisplayed] = useState(true);
+  const [anim, setAnim] = useState<boolean | undefined>(undefined);
 
-  /*var lastScrollTop = 0;
+  var lastScrollTop = 0;
   useEffect(() => {
     const onScroll = () => {
       var st = window.scrollY || document.documentElement.scrollTop;
       const scroll = window.scrollY;
-      console.log(scroll);
 
       // if scroll up
-      if (st < lastScrollTop && scroll === 0) {
-        setIsNavDisplayed(true);
-      } else if (scroll > 170) setIsNavDisplayed(false);
+      if (st < lastScrollTop) {
+        if (scroll < 80) setAnim(true);
+        else setAnim(false);
+      } else if (st > lastScrollTop) {
+        if (scroll > 150) setAnim(false);
+      }
 
       // eslint-disable-next-line react-hooks/exhaustive-deps
       lastScrollTop = st <= 0 ? 0 : st;
@@ -31,11 +33,13 @@ export const Navigation = ({ cta = true }: NavigationProps) => {
 
     addEventListener("touchmove", onScroll);
     addEventListener("scroll", onScroll);
-  }, []);*/
+  }, []);
 
   return (
     <nav
-      className={`flex justify-between items-center gap-4 py-4 duration-500`}
+      className={`flex justify-between items-center gap-4 py-4 ${
+        anim === true ? "animate-up-down" : anim === false ? "hidden" : ""
+      } `}
     >
       <ul className="flex gap-6 items-center">
         <li>
