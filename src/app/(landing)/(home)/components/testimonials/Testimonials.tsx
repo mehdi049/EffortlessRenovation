@@ -52,8 +52,8 @@ export const Testimonials = () => {
       className="bg-center bg-cover relative grid grid-cols-1 md:grid-cols-2 pb-64 md:pb-0"
       style={{
         backgroundImage: isMobileScreen
-          ? "url(/images/hero-bg-2-mobile.png)"
-          : "url(/images/hero-bg-2.png)",
+          ? "url(/images/hero-bg-2-mobile.webp)"
+          : "url(/images/hero-bg-2.webp)",
       }}
       id="testimonials"
     >

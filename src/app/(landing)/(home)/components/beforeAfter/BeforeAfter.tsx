@@ -21,10 +21,10 @@ export const BeforeAfter = () => {
   };*/
 
   const items = [
-    "/images/ba1.png",
-    "/images/ba2.png",
-    "/images/ba3.png",
-    "/images/ba4.png",
+    "/images/ba1.webp",
+    "/images/ba2.webp",
+    "/images/ba3.webp",
+    "/images/ba4.webp",
   ];
   return (
     <div>

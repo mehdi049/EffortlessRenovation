@@ -35,7 +35,7 @@ export const Allies = () => {
         </p>
       </div>
       <div className="grid gap-4 grid-cols-1 md:grid-cols-2 items-center mt-8 md:mt-16">
-        <Image src={"/images/img1.png"} width={572} height={572} alt="img" />
+        <Image src={"/images/img1.webp"} width={572} height={572} alt="img" />
 
         <div className="flex flex-col gap-8 md:gap-16 mt-8 md:mt-0">
           {items.map((item, i) => {

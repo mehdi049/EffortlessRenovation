@@ -9,7 +9,7 @@ export const Hero = () => {
   return (
     <div
       className="bg-center bg-cover md:rounded-lg -mx-4 md:mx-0"
-      style={{ backgroundImage: "url(/images/hero-bg.png)" }}
+      style={{ backgroundImage: "url(/images/hero-bg.webp)" }}
     >
       <ContainerCenter className="relative px-4 md:px-8 md:pb-16 pt-64">
         <H1 className="text-white">

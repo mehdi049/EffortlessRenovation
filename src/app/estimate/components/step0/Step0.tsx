@@ -13,7 +13,7 @@ export const Step0 = ({ goNextStep }: Step0Props) => {
       <ContainerSteps>
         <div className={className}>
           <Image
-            src={"/images/step0-img-1.png"}
+            src={"/images/step0-img-1.webp"}
             alt=""
             width={148}
             height={148}
@@ -29,7 +29,7 @@ export const Step0 = ({ goNextStep }: Step0Props) => {
         </div>
         <div className={className}>
           <Image
-            src={"/images/step0-img-2.png"}
+            src={"/images/step0-img-2.webp"}
             alt=""
             width={148}
             height={148}
