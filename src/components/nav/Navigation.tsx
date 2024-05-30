@@ -1,7 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/form/button/Button";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { MobileMenu } from "./MobileMenu";
 import Link from "next/link";
 import { ROUTES } from "@/routes";
@@ -13,11 +13,13 @@ export const Navigation = ({ cta = true }: NavigationProps) => {
   const [isDisplayed, setIsDisplayed] = useState(false);
   const [isNavDisplayed, setIsNavDisplayed] = useState(true);
 
-  addEventListener("scroll", () => {
-    const scroll = window.scrollY;
-    if (scroll === 0) setIsNavDisplayed(true);
-    else setIsNavDisplayed(false);
-  });
+  useEffect(() => {
+    addEventListener("scroll", () => {
+      const scroll = window.scrollY;
+      if (scroll === 0) setIsNavDisplayed(true);
+      else setIsNavDisplayed(false);
+    });
+  }, []);
 
   return (
     <nav
