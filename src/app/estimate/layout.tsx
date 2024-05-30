@@ -11,7 +11,7 @@ export default function RootLayout({
 }>) {
   return (
     <div className="relative">
-      <Container>
+      <Container className="sticky top-0 bg-white z-50 border-b border-gray-100">
         <ContainerCenter>
           <Navigation cta={false} />
         </ContainerCenter>

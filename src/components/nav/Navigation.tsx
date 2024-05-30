@@ -13,7 +13,7 @@ export const Navigation = ({ cta = true }: NavigationProps) => {
   const [isDisplayed, setIsDisplayed] = useState(false);
   const [isNavDisplayed, setIsNavDisplayed] = useState(true);
 
-  var lastScrollTop = 0;
+  /*var lastScrollTop = 0;
   useEffect(() => {
     const onScroll = () => {
       var st = window.scrollY || document.documentElement.scrollTop;
@@ -31,13 +31,11 @@ export const Navigation = ({ cta = true }: NavigationProps) => {
 
     addEventListener("touchmove", onScroll);
     addEventListener("scroll", onScroll);
-  }, []);
+  }, []);*/
 
   return (
     <nav
-      className={`flex justify-between items-center gap-4 py-4 duration-500 ${
-        isNavDisplayed ? "-mt-0" : "-mt-40"
-      }`}
+      className={`flex justify-between items-center gap-4 py-4 duration-500`}
     >
       <ul className="flex gap-6 items-center">
         <li>
