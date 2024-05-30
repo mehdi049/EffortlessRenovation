@@ -27,7 +27,7 @@ export default function RootLayout({
           </a>
         </p>
       </Banner>
-      <Container className="sticky top-0 bg-white z-50 border-b border-gray-100">
+      <Container>
         <ContainerCenter>
           <Navigation />
         </ContainerCenter>
