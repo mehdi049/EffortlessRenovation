@@ -11,8 +11,20 @@ type NavigationProps = {
 };
 export const Navigation = ({ cta = true }: NavigationProps) => {
   const [isDisplayed, setIsDisplayed] = useState(false);
+  const [isNavDisplayed, setIsNavDisplayed] = useState(true);
+
+  addEventListener("scroll", () => {
+    const scroll = window.scrollY;
+    if (scroll === 0) setIsNavDisplayed(true);
+    else setIsNavDisplayed(false);
+  });
+
   return (
-    <nav className="flex justify-between items-center gap-4 py-4">
+    <nav
+      className={`flex justify-between items-center gap-4 py-4 duration-500 ${
+        isNavDisplayed ? "mt-0" : "-mt-48"
+      }`}
+    >
       <ul className="flex gap-6 items-center">
         <li>
           <Link href={ROUTES.HOME}>
