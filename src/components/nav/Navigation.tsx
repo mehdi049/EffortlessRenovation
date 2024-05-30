@@ -15,7 +15,7 @@ export const Navigation = ({ cta = true }: NavigationProps) => {
 
   var lastScrollTop = 0;
   useEffect(() => {
-    addEventListener("scroll", () => {
+    const onScroll = () => {
       var st = window.scrollY || document.documentElement.scrollTop;
       const scroll = window.scrollY;
       console.log(scroll);
@@ -27,7 +27,10 @@ export const Navigation = ({ cta = true }: NavigationProps) => {
 
       // eslint-disable-next-line react-hooks/exhaustive-deps
       lastScrollTop = st <= 0 ? 0 : st;
-    });
+    };
+
+    addEventListener("touchmove", onScroll);
+    addEventListener("scroll", onScroll);
   }, []);
 
   return (
