@@ -14,7 +14,7 @@ import { ContainerCenter } from "@/components/ui/container/ContainerCenter";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-8 md:gap-20">
+    <main className="flex flex-col gap-8 md:gap-20 pt-20">
       <Container className="flex flex-col gap-8 md:gap-20">
         <Hero />
         <Container>

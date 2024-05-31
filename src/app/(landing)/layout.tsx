@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
-import { Container } from "@/components/ui/container/Container";
-import { Navigation } from "@/components/nav/Navigation";
-import { ContainerCenter } from "@/components/ui/container/ContainerCenter";
-import { Banner } from "@/components/ui/banner/banner";
 import { Button } from "@/components/ui/form/button/Button";
 import { ROUTES } from "@/routes";
 import Link from "next/link";
+import { AnimatedSection } from "./(home)/components/AnimatedSection";
 
 export const metadata: Metadata = {
   title: "EffortlessRenovation",
@@ -19,19 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <div className="relative">
-      <Banner>
-        <p className="text-white text-sm">
-          Special Launch Promo: FREE inspections normally cost $100{" "}
-          <a href="#" className="underline">
-            Discover now
-          </a>
-        </p>
-      </Banner>
-      <Container>
-        <ContainerCenter>
-          <Navigation />
-        </ContainerCenter>
-      </Container>
+      <AnimatedSection />
       {children}
 
       <Link

@@ -1,46 +1,16 @@
 "use client";
 import { Button } from "@/components/ui/form/button/Button";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { MobileMenu } from "./MobileMenu";
 import Link from "next/link";
 import { ROUTES } from "@/routes";
 
-type NavigationProps = {
-  cta?: boolean;
-};
-export const Navigation = ({ cta = true }: NavigationProps) => {
+export const Navigation = () => {
   const [isDisplayed, setIsDisplayed] = useState(false);
-  const [anim, setAnim] = useState<boolean | undefined>(undefined);
-
-  var lastScrollTop = 0;
-  useEffect(() => {
-    const onScroll = () => {
-      var st = window.scrollY || document.documentElement.scrollTop;
-      const scroll = window.scrollY;
-
-      // if scroll up
-      if (st < lastScrollTop) {
-        if (scroll < 80) setAnim(true);
-        else setAnim(false);
-      } else if (st > lastScrollTop) {
-        if (scroll > 150) setAnim(false);
-      }
-
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-      lastScrollTop = st <= 0 ? 0 : st;
-    };
-
-    addEventListener("touchmove", onScroll);
-    addEventListener("scroll", onScroll);
-  }, []);
 
   return (
-    <nav
-      className={`flex justify-between items-center gap-4 py-4 ${
-        anim === true ? "animate-up-down" : anim === false ? "hidden" : ""
-      } `}
-    >
+    <nav className="flex justify-between items-center gap-4 py-4">
       <ul className="flex gap-6 items-center">
         <li>
           <Link href={ROUTES.HOME}>
@@ -67,11 +37,10 @@ export const Navigation = ({ cta = true }: NavigationProps) => {
         </li>
       </ul>
 
-      {cta && (
-        <Button size="sm" className="hidden md:block">
-          Contact us
-        </Button>
-      )}
+      <Button size="sm" className="hidden md:block">
+        Contact us
+      </Button>
+
       <Image
         src={"/vectors/bars.svg"}
         width={36}
