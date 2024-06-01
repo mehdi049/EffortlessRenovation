@@ -1,16 +1,20 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import { Transition, TransitionStatus } from "react-transition-group";
+import { Transition } from "react-transition-group";
 
 type AnimateProps = {
   children: React.ReactNode;
   dep?: string;
   type?: "slide" | "opacity";
+  duration?: number;
 };
 
-const duration = 300;
-
-export const Animate = ({ children, dep, type = "slide" }: AnimateProps) => {
+export const Animate = ({
+  children,
+  dep,
+  type = "slide",
+  duration = 300,
+}: AnimateProps) => {
   const [inProp, setInProp] = useState(false);
   const nodeRef = useRef(null);
 
