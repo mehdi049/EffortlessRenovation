@@ -15,12 +15,8 @@ export const AnimatedSection = () => {
       const scroll = window.scrollY;
 
       // if scroll up
-      if (st < lastScrollTop) {
-        if (scroll < 80) setAnim(true);
-        else setAnim(false);
-      } else if (st > lastScrollTop) {
-        if (scroll > 150) setAnim(false);
-      }
+      if (st < lastScrollTop) setAnim(true);
+      else if (st > lastScrollTop) setAnim(false);
 
       // eslint-disable-next-line react-hooks/exhaustive-deps
       lastScrollTop = st <= 0 ? 0 : st;
@@ -31,8 +27,12 @@ export const AnimatedSection = () => {
   }, []);
   return (
     <div
-      className={`absolute left-0 top-0 w-full z-50 bg-white ${
-        anim === true ? "animate-up-down" : anim === false ? "hidden" : ""
+      className={`fixed left-0 duration-500 w-full z-50 bg-white ${
+        anim === true
+          ? "animate-up-down top-0 shadow-sm"
+          : anim === false
+          ? "-top-40"
+          : "top-0"
       }`}
     >
       <Banner>
