@@ -38,7 +38,7 @@ export const Step4 = () => {
       });
       setForm((prevState: formData) => ({
         ...prevState,
-        step: 5,
+        stepAnimation: 5,
       }));
     } catch (error) {
       console.log(error);
@@ -100,7 +100,7 @@ export const Step4 = () => {
           onClick={() => {
             setForm((prevState: formData) => ({
               ...prevState,
-              step: 3,
+              stepAnimation: 3,
             }));
           }}
         >

@@ -44,7 +44,7 @@ export const Step3 = () => {
     if (form.renovate.length > 0)
       setForm((prevState: formData) => ({
         ...prevState,
-        step: 4,
+        stepAnimation: 4,
       }));
     else setError("Please select at least one option");
   };
@@ -85,7 +85,7 @@ export const Step3 = () => {
           onClick={() => {
             setForm((prevState: formData) => ({
               ...prevState,
-              step: 2,
+              stepAnimation: 2,
             }));
           }}
         >

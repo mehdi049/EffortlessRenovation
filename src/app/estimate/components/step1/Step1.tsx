@@ -25,7 +25,7 @@ export const Step1 = () => {
       });
       setForm((prevState: formData) => ({
         ...prevState,
-        step: 2,
+        stepAnimation: 2,
       }));
     } catch (error) {
       if (error instanceof ZodError) {

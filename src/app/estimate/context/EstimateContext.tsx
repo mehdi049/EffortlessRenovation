@@ -3,6 +3,7 @@ import { createContext, useEffect, useState } from "react";
 
 export const initFormData = {
   step: 0,
+  stepAnimation: 0,
   zip: "",
   status: "",
   renovate: [],
@@ -14,6 +15,7 @@ export const initFormData = {
 
 export type formData = {
   step: 0;
+  stepAnimation: 0;
   zip: string;
   status: string;
   renovate: string[];
@@ -39,6 +41,13 @@ export const EstimateContextProvider = ({
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [form.step]);
+
+  useEffect(() => {
+    console.log("trigger...");
+    setTimeout(() => {
+      setForm((prev) => ({ ...prev, step: form.stepAnimation }));
+    }, 300);
+  }, [form.stepAnimation]);
 
   return (
     <EstimateContext.Provider value={{ form, setForm }}>

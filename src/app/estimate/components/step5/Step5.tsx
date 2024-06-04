@@ -74,7 +74,7 @@ export const Step5 = () => {
           onClick={() => {
             setForm((prevState: formData) => ({
               ...prevState,
-              step: 4,
+              stepAnimation: 4,
             }));
           }}
         >

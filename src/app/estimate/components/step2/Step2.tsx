@@ -28,7 +28,7 @@ export const Step2 = () => {
     if (form.status.length > 0)
       setForm((prevState: formData) => ({
         ...prevState,
-        step: 3,
+        stepAnimation: 3,
       }));
     else setError("Please select one option");
   };
@@ -69,7 +69,7 @@ export const Step2 = () => {
           onClick={() => {
             setForm((prevState: formData) => ({
               ...prevState,
-              step: 1,
+              stepAnimation: 1,
             }));
           }}
         >
