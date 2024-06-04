@@ -13,22 +13,44 @@ export default function Page() {
   const { setForm, form } = useContext(EstimateContext);
 
   return (
-    <Animate dep={form.step.toString()}>
+    <>
       {form.step === 0 && (
-        <Step0
-          goNextStep={() =>
-            setForm((prevState: formData) => ({
-              ...prevState,
-              step: 1,
-            }))
-          }
-        />
+        <Animate dep={form.step.toString()}>
+          <Step0
+            goNextStep={() =>
+              setForm((prevState: formData) => ({
+                ...prevState,
+                step: 1,
+              }))
+            }
+          />
+        </Animate>
       )}
-      {form.step === 1 && <Step1 />}
-      {form.step === 2 && <Step2 />}
-      {form.step === 3 && <Step3 />}
-      {form.step === 4 && <Step4 />}
-      {form.step === 5 && <Step5 />}
-    </Animate>
+      {form.step === 1 && (
+        <Animate dep={form.step.toString()}>
+          <Step1 />
+        </Animate>
+      )}
+      {form.step === 2 && (
+        <Animate dep={form.step.toString()}>
+          <Step2 />
+        </Animate>
+      )}
+      {form.step === 3 && (
+        <Animate dep={form.step.toString()}>
+          <Step3 />
+        </Animate>
+      )}
+      {form.step === 4 && (
+        <Animate dep={form.step.toString()}>
+          <Step4 />
+        </Animate>
+      )}
+      {form.step === 5 && (
+        <Animate dep={form.step.toString()}>
+          <Step5 />
+        </Animate>
+      )}
+    </>
   );
 }
